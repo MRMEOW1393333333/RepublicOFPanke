@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <!-- Kufic pattern for borders -->
+    <pattern id="kuficPatternTop" width="120" height="20" patternUnits="userSpaceOnUse">
+      <text x="60" y="15" font-family="'Courier New', monospace, sans-serif" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle" letter-spacing="1">جمهوری‌پنکه</text>
+    </pattern>
+    <pattern id="kuficPatternBottom" width="120" height="20" patternUnits="userSpaceOnUse">
+      <text x="60" y="15" font-family="'Courier New', monospace, sans-serif" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle" letter-spacing="1">جمهوری‌پنکه</text>
+    </pattern>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#b45309" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Green stripe (Top) -->
+  <rect x="0" y="0" width="600" height="133.33" fill="#15803d" />
+  
+  <!-- White stripe (Middle) -->
+  <rect x="0" y="133.33" width="600" height="133.33" fill="#ffffff" />
+  
+  <!-- Red stripe (Bottom) -->
+  <rect x="0" y="266.66" width="600" height="133.34" fill="#dc2626" />
+
+  <!-- Kufic Border Top (on Green/White border) -->
+  <rect x="0" y="117" width="600" height="16" fill="rgba(21, 128, 61, 0.95)" />
+  <rect x="0" y="117" width="600" height="16" fill="url(#kuficPatternTop)" />
+
+  <!-- Kufic Border Bottom (on White/Red border) -->
+  <rect x="0" y="267" width="600" height="16" fill="rgba(220, 38, 38, 0.95)" />
+  <rect x="0" y="267" width="600" height="16" fill="url(#kuficPatternBottom)" />
+
+  <!-- Center Emblem (Republic of Panke: Laurel Wreath + Standing Fan) -->
+  <g transform="translate(300, 200)" filter="url(#goldGlow)">
+    <!-- Laurel Wreath Left -->
+    <path d="M-8,65 C-45,60 -75,30 -78,-10 C-80,-45 -60,-75 -25,-90 C-32,-70 -30,-45 -18,-25 C-35,-15 -48,5 -45,30 C-42,50 -25,62 -8,65 Z" fill="url(#goldGrad)" opacity="0.9" />
+    <!-- Laurel Wreath Right -->
+    <path d="M8,65 C45,60 75,30 78,-10 C80,-45 60,-75 25,-90 C32,-70 30,-45 18,-25 C35,-15 48,5 45,30 C42,50 25,62 8,65 Z" fill="url(#goldGrad)" opacity="0.9" />
+    
+    <!-- Leaves detail on wreath -->
+    <g fill="url(#goldGrad)">
+      <!-- Left leaves -->
+      <path d="M-20,-75 C-35,-82 -48,-78 -52,-68 C-50,-60 -40,-62 -25,-68 Z" />
+      <path d="M-38,-48 C-55,-52 -68,-42 -70,-30 C-64,-25 -52,-30 -38,-40 Z" />
+      <path d="M-45,-15 C-65,-15 -74,2 -72,15 C-64,18 -55,10 -43,-5 Z" />
+      <path d="M-40,20 C-58,28 -62,48 -55,60 C-48,58 -44,45 -36,30 Z" />
+      
+      <!-- Right leaves -->
+      <path d="M20,-75 C35,-82 48,-78 52,-68 C50,-60 40,-62 25,-68 Z" />
+      <path d="M38,-48 C55,-52 68,-42 70,-30 C64,-25 52,-30 38,-40 Z" />
+      <path d="M45,-15 C65,-15 74,2 72,15 C64,18 55,10 43,-5 Z" />
+      <path d="M40,20 C58,28 62,48 55,60 C48,58 44,45 36,30 Z" />
+
+      <!-- Bottom knot/circle -->
+      <circle cx="0" cy="65" r="5" fill="#f59e0b" />
+    </g>
+
+    <!-- Fan Pole / Stand -->
+    <rect x="-4.5" y="-10" width="9" height="75" rx="3" fill="url(#goldGrad)" />
+    <!-- Stand Base -->
+    <ellipse cx="0" cy="65" rx="22" ry="7" fill="url(#goldGrad)" />
+    <!-- Stand Joint Knobs -->
+    <circle cx="0" cy="15" r="6" fill="#d97706" />
+
+    <!-- Fan Head / Rotor Motor Hub -->
+    <circle cx="0" cy="-10" r="14" fill="url(#goldGrad)" stroke="#b45309" stroke-width="2" />
+    <circle cx="0" cy="-10" r="5" fill="#78350f" />
+
+    <!-- Fan Blades (3 stylized curved aerodynamic blades as in emblem) -->
+    <!-- Blade 1: Top Right -->
+    <path d="M0,-10 C8,-28 18,-42 35,-48 C44,-51 50,-42 46,-30 C40,-15 25,-8 10,-6 Z" fill="url(#goldGrad)" stroke="#b45309" stroke-width="1.5" />
+    <!-- Blade 2: Bottom Right -->
+    <path d="M0,-10 C18,-6 32,4 42,20 C48,28 40,36 28,34 C12,30 2,16 0,-2 Z" fill="url(#goldGrad)" stroke="#b45309" stroke-width="1.5" />
+    <!-- Blade 3: Left -->
+    <path d="M0,-10 C-18,-14 -35,-12 -46,0 C-52,8 -46,18 -32,18 C-18,18 -6,6 -2,-5 Z" fill="url(#goldGrad)" stroke="#b45309" stroke-width="1.5" />
+  </g>
+</svg>

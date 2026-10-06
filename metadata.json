@@ -1,0 +1,6 @@
+{
+  "name": "جمهوری پنکه | پرتال رسمی و پنکه اینترنشنال",
+  "description": "پرتال رسمی کشور جمهوری پنکه با پوشش زنده توئیت‌ها و بیانیه‌های رسمی @RepublicofPanke و پخش زنده استودیویی شبکه پنکه اینترنشنال",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
